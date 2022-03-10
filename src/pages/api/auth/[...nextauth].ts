@@ -36,7 +36,7 @@ export default NextAuth({
                 )
               )
             ),
-            query.Create(query.Collection("user"), { data: { email } }),
+            query.Create(query.Collection("users"), { data: { email } }),
             query.Get(
               query.Match(
                 query.Index("user_by_email"),
